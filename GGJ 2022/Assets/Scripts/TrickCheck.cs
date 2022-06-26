@@ -13,10 +13,10 @@ public class TrickCheck : MonoBehaviour
     private void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            RayCastCheck();
-        }
+        // if (Input.GetKeyDown(KeyCode.E))
+        // {
+        //     RayCastCheck();
+        // }
     }
 
     private void RayCastCheck()

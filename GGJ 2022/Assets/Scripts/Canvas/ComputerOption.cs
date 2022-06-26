@@ -17,6 +17,7 @@ public class ComputerOption : MonoBehaviour
 
     public void OptionThree()
     {
+        FindObjectOfType<ChildList>().Children[2].SetActive(true);
         Computer.SetActive(false);
     }
 

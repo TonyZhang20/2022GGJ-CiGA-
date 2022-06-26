@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   patience: 0
   warning: 0
-  worldTime: 720
+  worldTime: 180
   score: 0

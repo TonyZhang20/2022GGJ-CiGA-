@@ -8,6 +8,7 @@ TagManager:
   - Food
   - Video
   - Item
+  - NPC
   layers:
   - Default
   - TransparentFX

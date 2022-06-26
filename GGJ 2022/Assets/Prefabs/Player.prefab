@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 337569091}
-  - component: {fileID: 337569093}
   - component: {fileID: 337569092}
   m_Layer: 0
   m_Name: TrickChecker
@@ -26,25 +25,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 337569090}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.711, z: 0.278}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2773803277773081689}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &337569093
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 337569090}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.5025563, z: 0.46543533}
-  m_Center: {x: 0, y: 0.9037708, z: 0.31338695}
 --- !u!114 &337569092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,6 +43,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af9549a2f446e9b4d93e0dee394fce69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  computerOption: {fileID: 0}
+  foodOption: {fileID: 0}
+  videoOption: {fileID: 0}
+  itemOption: {fileID: 0}
+  Player: {fileID: 2773803277773246521}
 --- !u!1 &1058233670
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,6 +120,7 @@ GameObject:
   - component: {fileID: 2773803277780541983}
   - component: {fileID: 239566620418707728}
   - component: {fileID: 239566620418707726}
+  - component: {fileID: 239566620418707725}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -184,13 +176,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
+  m_Height: 1.5
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1.2, z: 0}
+  m_Center: {x: 0, y: 0.8641524, z: 0}
 --- !u!114 &239566620418707726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,6 +199,21 @@ MonoBehaviour:
   animator: {fileID: 2773803277780541983}
   characterController: {fileID: 239566620418707728}
   playerData: {fileID: 11400000, guid: 7ee765c9b93d0064b83cf5320ce80adb, type: 2}
+  isOpen: 0
+--- !u!136 &239566620418707725
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2773803277773246521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  m_Radius: 0.5
+  m_Height: 1.7284989
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.86415243, z: 0}
 --- !u!1 &2773803277773246525
 GameObject:
   m_ObjectHideFlags: 0
